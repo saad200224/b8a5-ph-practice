@@ -50,9 +50,7 @@
   <body class="font-[work-sans] bg-bg-primary">
 
     <header>
-      <section
-        class="bg-bg-hero flex flex-col lg:flex-row justify-center items-center gap-10 mb-32"
-      >
+      <section class="bg-bg-hero flex flex-col lg:flex-row justify-center items-center gap-10 mb-32" >
         <div class="text-center">
           <h3 class="uppercase text-2xl font-medium mb-12">---Sale Fever---</h3>
           <h1 class="text-3xl lg:text-5xl font-bold mb-16">
@@ -308,11 +306,7 @@
             <!-- third card -->
               <div onclick="handleClick(this)" class="card w-72 bg-base-100 shadow-xl p-5">
               <figure class="p-5 bg-bg-cart rounded-lg">
-                <img
-                  src="./images/prod6.png"
-                  alt="Shoes"
-                  class="w-32 h-36 rounded-xl"
-                />
+                <img src="./images/prod6.png" alt="Shoes" class="w-32 h-36 rounded-xl"/>
               </figure>
               <div class="card-body items-center text-center">
                 <div class="rating">
@@ -326,21 +320,9 @@
                     name="rating-1"
                     class="mask mask-star bg-[#FFC107]"
                   />
-                  <input
-                    type="radio"
-                    name="rating-1"
-                    class="mask mask-star bg-[#FFC107]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-1"
-                    class="mask mask-star bg-[#FFC107]"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-1"
-                    class="mask mask-star bg-[#FFC107]"
-                  />
+                  <input type="radio" name="rating-1" class="mask mask-star bg-[#FFC107]" />
+                  <input type="radio" name="rating-1" class="mask mask-star bg-[#FFC107]"/>
+                  <input type="radio" name="rating-1" class="mask mask-star bg-[#FFC107]"/>
                 </div>
                 <h2 class="card-title">Sports cates</h2>
                 <p> <span id="price-kitchenware-6">159.00</span> TK</p>
@@ -358,7 +340,7 @@
           <div class="bg-white mb-6 rounded-lg p-6">
             <h3 class="text-2xl font-medium text-black">Have coupon?</h3>
             <input id="coupon-input" class="p-3 border rounded-lg" type="text" name="" placeholder="Coupon Code"/>
-            <button onclick="couponButton()" id="btn-coupon" class="bg-bg-secondary text-xl font-semibold px-6 py-3 rounded-lg text-white">Apply</button>
+            <button onclick="couponButton()" id="btn-coupon" class="bg-bg-secondary text-xl font-semibold px-6 py-3 rounded-lg text-white" disabled>Apply</button>
           </div>
 
           <div class="bg-white p-6 rounded-lg">
@@ -367,14 +349,14 @@
 
             <div class="divider w-full"></div> 
 
-            <p class="text-2xl font-medium text-black mb-2">Total Price: <span id="total-span">00.00</span> TK</p>
-            <p class="text-2xl font-medium text-black mb-2">Discount: <span id="discount-span">00.00</span> TK</p>
-            <p class="text-2xl font-medium text-black mb-2">Total: <span id="net-total">00.00</span> TK</p>
+            <p class="text-2xl font-medium text-black mb-2">Total Price: <span id="total-span">0.00</span> TK</p>
+            <p class="text-2xl font-medium text-black mb-2">Discount: <span id="discount-span">0.00</span> TK</p>
+            <p class="text-2xl font-medium text-black mb-2">Total: <span id="net-total">0.00</span> TK</p>
 
             <div class="divider w-full"></div> 
 
             <!-- Modal -->
-            <button id="btn-purchase" class="bg-bg-secondary px-20 py-4 rounded-lg text-xl font-semibold text-white w-full" onclick="my_modal_2.showModal()">Make Purchase</button>
+            <button disabled id="btn-purchase" class="bg-bg-secondary px-20 py-4 rounded-lg text-xl font-semibold text-white w-full" onclick="my_modal_2.showModal()">Make Purchase</button>
               <dialog id="my_modal_2" class="modal">
                 <form method="dialog" class="modal-box">
                   <div class="flex flex-col p-5 items-center">

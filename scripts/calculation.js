@@ -1,3 +1,6 @@
+
+
+
 let total = 0;
 function handleClick(target){
     const entryProductList = document.getElementById("entry-list");
@@ -12,6 +15,13 @@ function handleClick(target){
 
     const netTotal = document.getElementById('net-total');
     netTotal.innerText = total.toFixed(2);
+
+    if ( total > 0){
+        document.getElementById('btn-purchase').removeAttribute('disabled');
+    }
+    if ( total >= 200){
+        document.getElementById('btn-coupon').removeAttribute('disabled');
+    }
 
     return total.toFixed(2);
 }
@@ -35,6 +45,8 @@ function couponButton(){
         netTotal.innerText = (total.toFixed(2)-discount).toFixed(2);
     } 
 }
+
+
 
 function goHome(){
     window.location.href = 'index.html'
