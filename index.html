@@ -50,7 +50,7 @@
   <body class="font-[work-sans] bg-bg-primary">
 
     <header>
-      <section class="bg-bg-hero flex flex-col lg:flex-row justify-center items-center gap-10 mb-32" >
+      <section class="bg-bg-hero flex flex-col md:flex-row lg:flex-row justify-center items-center gap-10 mb-32 p-5" >
         <div class="text-center">
           <h3 class="uppercase text-2xl font-medium mb-12">---Sale Fever---</h3>
           <h1 class="text-3xl lg:text-5xl font-bold mb-16">
@@ -75,7 +75,7 @@
 
     <main>
 
-      <div class="flex flex-col lg:flex-row gap-6 px-36 justify-center">
+      <div class="flex flex-col md:flex-wrap lg:flex-row gap-6 px-5 lg:px-36 justify-center">
         <!-- card container -->
         <div>
           <!-- furniture section -->
@@ -83,12 +83,12 @@
             <h2 class="text-4xl font-semibold mb-8">Furniture</h2>
             <div class="flex flex-col lg:flex-row justify-center gap-6">
             <!-- first card -->
-              <div onclick="handleClick(this)" class="card w-72 h-auto bg-base-100 shadow-xl p-5">
+              <div onclick="handleClick(this)" class="card w-full lg:w-72 h-auto bg-base-100 shadow-xl p-5">
               <figure class="p-5 bg-bg-cart rounded-lg">
                 <img
                   src="./images/prod7.png"
                   alt="Shoes"
-                  class="w-32 h-36 rounded-xl"
+                  class="w-auto h-36 rounded-xl"
                 />
               </figure>
 
@@ -128,12 +128,12 @@
               </div>
 
             <!-- second card -->
-              <div onclick="handleClick(this)" class="card w-72 h-auto bg-base-100 shadow-xl p-5">
+              <div onclick="handleClick(this)" class="card w-full lg:w-72 h-auto bg-base-100 shadow-xl p-5">
               <figure class="p-5 bg-bg-cart rounded-lg">
                 <img
                   src="./images/prod8.png"
                   alt=""
-                  class="w-32 h-36 rounded-xl"
+                  class="w-auto h-36 rounded-xl"
                 />
               </figure>
               <div class="card-body items-center text-center">
@@ -168,13 +168,14 @@
                 <p> <span id="price-kitchenware-2">299.00</span> TK</p>
               </div>
               </div>
+
             <!-- third card -->
-              <div onclick="handleClick(this)" class="card w-72 bg-base-100 shadow-xl p-5">
+              <div onclick="handleClick(this)" class="card w-full lg:w-72 bg-base-100 shadow-xl p-5">
               <figure class="p-5 bg-bg-cart rounded-lg">
                 <img
                   src="./images/prod9.png"
                   alt="Shoes"
-                  class="w-32 h-36 rounded-xl"
+                  class="w-auto h-36 rounded-xl"
                 />
               </figure>
               <div class="card-body items-center text-center">
@@ -217,12 +218,12 @@
             <h2 class="text-4xl font-semibold mb-8">Sportswear</h2>
             <div class="flex flex-col lg:flex-row justify-center gap-6">
             <!-- first card -->
-              <div onclick="handleClick(this)" class="card w-72 h-auto bg-base-100 shadow-xl p-5">
+              <div onclick="handleClick(this)" class="card w-full lg:w-72 h-auto bg-base-100 shadow-xl p-5">
               <figure class="p-5 bg-bg-cart rounded-lg">
                 <img
                   src="./images/prod4.png"
                   alt="Shoes"
-                  class="w-32 h-36 rounded-xl"
+                  class="w-auto h-36 rounded-xl"
                 />
               </figure>
 
@@ -262,12 +263,12 @@
               </div>
 
             <!-- second card -->
-              <div onclick="handleClick(this)" class="card w-72 h-auto bg-base-100 shadow-xl p-5">
+              <div onclick="handleClick(this)" class="card w-full lg:w-72 h-auto bg-base-100 shadow-xl p-5">
               <figure class="p-5 bg-bg-cart rounded-lg">
                 <img
                   src="./images/prod5.png"
                   alt=""
-                  class="w-32 h-36 rounded-xl"
+                  class="w-auto h-36 rounded-xl"
                 />
               </figure>
               <div class="card-body items-center text-center">
@@ -304,9 +305,9 @@
               </div>
 
             <!-- third card -->
-              <div onclick="handleClick(this)" class="card w-72 bg-base-100 shadow-xl p-5">
+              <div onclick="handleClick(this)" class="card w-full lg:w-72 bg-base-100 shadow-xl p-5">
               <figure class="p-5 bg-bg-cart rounded-lg">
-                <img src="./images/prod6.png" alt="Shoes" class="w-32 h-36 rounded-xl"/>
+                <img src="./images/prod6.png" alt="Shoes" class="w-auto h-36 rounded-xl"/>
               </figure>
               <div class="card-body items-center text-center">
                 <div class="rating">
@@ -339,8 +340,8 @@
         <div class="flex flex-col mt-[72px]">
           <div class="bg-white mb-6 rounded-lg p-6">
             <h3 class="text-2xl font-medium text-black">Have coupon?</h3>
-            <input id="coupon-input" class="p-3 border rounded-lg" type="text" name="" placeholder="Coupon Code"/>
-            <button onclick="couponButton()" id="btn-coupon" class="bg-gray-400 bg-bg-secondary text-xl font-semibold px-6 py-3 rounded-lg text-white" disabled>Apply</button>
+            <input id="coupon-input" class="mb-2 p-2 lg:p-3 border rounded-lg" type="text" name="" placeholder="Coupon Code"/>
+            <button onclick="couponButton()" id="btn-coupon" class="bg-gray-400 bg-bg-secondary text-base lg:text-xl font-semibold px-2 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-lg text-white" disabled>Apply</button>
           </div>
 
           <div class="bg-white p-6 rounded-lg">
@@ -356,7 +357,7 @@
             <div class="divider w-full"></div> 
 
             <!-- Modal -->
-            <button disabled id="btn-purchase" class="bg-gray-400 bg-bg-secondary px-20 py-4 rounded-lg text-xl font-semibold text-white w-full" onclick="my_modal_2.showModal()">Make Purchase</button>
+            <button disabled id="btn-purchase" class="bg-gray-400 bg-bg-secondary px-2 py-2 md:px-4 md:py-2 lg:px-20 lg:py-4 rounded-lg text-xl font-semibold text-white w-full" onclick="my_modal_2.showModal()">Make Purchase</button>
               <dialog id="my_modal_2" class="modal">
                 <form method="dialog" class="modal-box">
                   <div class="flex flex-col p-5 items-center">
