@@ -2,9 +2,10 @@ let total = 0;
 function handleClick(target){
     const entryProductList = document.getElementById("entry-list");
     const productName = target.childNodes[3].childNodes[3].innerText;
-    const li = document.createElement('li');
-    li.innerText = productName;
-    entryProductList.appendChild(li);
+    const count = entryProductList.childElementCount;
+    const ol = document.createElement('ol');
+    ol.innerText = `${count + 1} .${productName}`;
+    entryProductList.appendChild(ol);
 
     const price = target.childNodes[3].childNodes[5].innerText.split(" ")[0];
     total = parseInt(total) + parseInt(price);
