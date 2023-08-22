@@ -1,6 +1,3 @@
-
-
-
 let total = 0;
 function handleClick(target){
     const entryProductList = document.getElementById("entry-list");
@@ -17,10 +14,15 @@ function handleClick(target){
     netTotal.innerText = total.toFixed(2);
 
     if ( total > 0){
-        document.getElementById('btn-purchase').removeAttribute('disabled');
+        const buttonPurchase =  document.getElementById('btn-purchase');
+        buttonPurchase.removeAttribute('disabled');
+        buttonPurchase.classList.remove('bg-gray-400');
+
     }
     if ( total >= 200){
-        document.getElementById('btn-coupon').removeAttribute('disabled');
+        const buttonCoupon = document.getElementById('btn-coupon');
+        buttonCoupon.removeAttribute('disabled');
+        buttonCoupon.classList.remove('bg-gray-400');
     }
 
     return total.toFixed(2);
